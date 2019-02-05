@@ -4,9 +4,15 @@ html body{
   background-color: #F7F8F3;
 }
 
+#topheader{
+  background-color: #F7F8F3;
+  width: 100%;
+  height: auto;
+}
+
 header{
   width: 100%;
-  height: 150px;
+  //height: 150px;
 }
 
 header img{
@@ -141,4 +147,84 @@ header h1{
 
     }
 
+    }
+
+
+
+/* ---------------------navbar--------------------------------------------*/
+
+    #nav-bar
+    {
+      position: sticky;
+      background-color: #281859;
+      margin-top: 25px;
+      width: 100%;
+      height: auto;
+      /*padding: 0 2.5%;*/
+    }
+
+
+
+
+  .navbar{
+    background-color: #281859;
+    color: #F7F8F3;
+    vertical-align: middle !important;
+    padding:0% 0% 0% 0% !important;
+  }
+
+  .navbar-brand
+  {
+    float: left !important;
+    font-size: 1.5em;
+    color: #F7F8F3;
+  }
+
+
+  .navbar-nav .nav-item{
+    margin: 5px 20px 5px 20px !important;
+    padding: 0px 10px 5px 10px !important;
+    float: right !important;
+    text-align: left;
+    color: #F7F8F3;
+    font-size: 1.15em;
+  }
+
+.navbar-toggler-icon
+{
+  margin: 10px 0;
+  font-size: 1em;
+  color: #F7F8F3 !important;
+  background-color: #281859 !important;
+  outline: ridge;
+  outline-color: #F7F8F3!important;
+  outline-width: medium;
+}
+
+/*--------------------------------hover-------------------*/
+
+      .navbar-nav a:hover{
+      //text-shadow: 1px 1.75px 2.5px #9989B4 !important;
+      text-shadow: 1px 1.75px 2.5px #eded67de !important;
+      margin: 5px 20px 5px 20px !important;
+      padding: 0px 10px 5px 10px !important;
+      vertical-align: middle !important;
+      background-color: #281859 !important;
+      color: #F7F8F3 !important;
+      font-size: 1.15em;
+      //font-weight: 600 !important;
+
+    }
+
+    .nav-item:hover{
+    //  margin-top: 0 !important;
+      margin: 5px 20px 5px 20px !important;
+      padding: 0px 10px 5px 10px !important;
+      float: right !important;
+      color: #281859;
+      background-color: #0d0132;
+      font-size: 1.15em;
+      /*border-right: 1.5px solid #f7f8f3;*/
+      border-bottom: 1.5px solid #F7F8F3;
+      //border-width: medium;
     }
