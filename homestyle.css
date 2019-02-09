@@ -234,7 +234,9 @@ header h1{
       //border-width: medium;
     }
 
-
+    #hovr button:hover{
+      text-shadow: 2px 2px 3px #eded67de;
+    }
 
     /*-------------- carousel styling ---------------------*/
 
@@ -353,6 +355,15 @@ button{
   margin-right: 3.5% !important;
   color: #f7f8f3 !important;
 background-color: #281859 !important;
+}
+
+button:hover{
+  margin-right: 3.5% !important;
+  color: #f7f8f3 !important;
+background-color: #281859 !important;
+text-shadow: 2px 2px 3px #eded67de;
+
+
 }
 
 @media (min-width:575px) and (max-width: 765px) {
