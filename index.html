@@ -10,6 +10,23 @@
 <!-- ************** Jquery active link styling *******************  -->
 
     <style media="screen">
+samp{
+  font-family: 'Cabin', Helvetica, Arial, sans-serif !important;
+
+}
+
+samp:hover{
+  font-family: 'Cabin', Helvetica, Arial, sans-serif !important;
+  text-shadow: 1px 1.75px 2.5px #eded67de !important;
+  margin: 5px 20px 5px 20px !important;
+  padding: 0px 10px 5px 10px !important;
+  vertical-align: middle !important;
+  background-color: #281859 !important;
+  color: #F7F8F3 !important;
+  font-size: 1.25em;
+  font-weight: 600 !important;
+
+    }
       .active{
 
         border-bottom: 1.5px solid white;
@@ -76,11 +93,11 @@
 
   <div class="collapse navbar-collapse" id="navbarNav">
     <div class="navbar-nav ml-auto mr-auto">
-      <a class="nav-item nav-link active" href="#home"><H>Home</H> <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#login">Login</a>
+      <a class="nav-item nav-link active" href="home.html"><H>Home</H> <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" id="disabled" href="home.html"  data-target="#modal_login" data-toggle="modal">Login</a>
       <a class="nav-item nav-link" href="#lodge">Lodge Complaint</a>
-      <a class="nav-item nav-link" href="#View">View Complaint</a>
-      <a class="nav-item nav-link" href="#comp">Complaint Status</a>
+      <a class="nav-item nav-link" href="view.html">View Complaint</a>
+      <a class="nav-item nav-link" href="status.html">Complaint Status</a>
     </div>
   </div>
 </nav>
@@ -91,6 +108,85 @@
 </div>
 
 <!-- ****************** header completed *************************************-->
+
+
+<!-- ****************** modal login  *************************************-->
+
+<div class="modal fade" id="modal_login">
+
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content">
+
+    <div class="modal-header">
+
+      <button type="button" class="close float-right" name="button" data-dismiss="modal">&times;</button>
+  </div>
+      <div class="modal-body">
+        <div class="text-center">
+
+        <img src="img/user.png" class="img-circle" style="width:100px; height:100px;" alt="">
+        <p>Please identify yourself</p>
+      </div>
+
+        <form class="" action="index.html" method="post">
+          <div class=""  style="padding:3% 7% !important;">
+
+          <div class="form-group row mr-auto ml-auto">
+            <label for="username" class="col-sm-1 col-form-label col-form-label"> <i class="fa fa-user fa-2x" style="color:#281859 !important;"></i></label>
+            <div class="col-sm-11">
+
+             <input type="text" maxlength="20" placeholder="Username" name="" value="" style="color:#281859 !important; background-color: #D4EAFC !important; border: 1.5px solid #c1c1c1 !important; margin-left:3%; width:95% !important;" class="form-control" >
+           </div>
+
+          </div>
+
+          <div class="form-group row mr-auto ml-auto">
+            <label for="password" class="col-sm-1 col-form-label col-form-label"> <i class="fa fa-lock fa-2x" style="color:#281859 !important;"></i></label>
+            <div class="col-sm-11">
+
+
+            <input type="password" maxlength="10" placeholder="Password" name="" value="" class="form-control" style="color:#281859 !important; background-color: #D4EAFC !important; border: 1.5px solid #c1c1c1 !important; margin-left:3%; width:95% !important;">
+
+            </div>
+          </div>
+
+          <div id="hovr" class="form-group col-xs-12" style="text-align:right; margin-right:1.5%;">
+          <button type="submit" class="btn" name="button" class="float-right">Login</button>
+            </div>
+
+
+          <div class="" style=" padding:0 7% 0 15%; justify-content:none !important;">
+
+              <div class="row">
+                <div class="col-xs-12 mr-auto" style="justify-content:flex-start !important; float:left !important;">
+                    <a href="#" class="" style="font-size: 1.25em; color:#281859 !important;">Register</a>
+                </div>
+
+              <div class="col-xs-12" style="justify-content:flex-end !important; float:right !important;">
+                <a href="#" class="" style="font-size: 1.25em; color:#281859 !important;">Forgot Password</a>
+              </div>
+
+              </div>
+
+          </div>
+          </div>
+
+        </form>
+
+      </div>
+
+
+
+  </div>
+
+</div>
+
+</div>
+
+<!-- ****************** modal completed *************************************-->
+
+
+
 
 <!--******************* Carousel slides begin *******************************-->
 
@@ -185,7 +281,7 @@ Responsibility of protection and safety of the citizens of Gujarat is on prime r
   </div>
   <div class="form-group">
     <label for="formGroupExampleInput">Subject</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Subject">
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your Matter of Concern">
   </div>
 
   <div class="form-group">
@@ -216,7 +312,7 @@ Responsibility of protection and safety of the citizens of Gujarat is on prime r
 <div class="row">
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
-<p class="text-center"> <br>&copyCopyright 2019 gujaratpolice.org / All rights reserved
+<p class="text-center"> <br> &copyCopyright 2019 gujaratpolice.org / All rights reserved
 Disclaimer &nbsp <br>Concept , Content and Maintenance: Gujarat Police <br></p>
 </div>
 
