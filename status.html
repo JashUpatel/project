@@ -88,7 +88,7 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <div class="navbar-nav ml-auto mr-auto">
       <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-      <span class="nav-item nav-link" href="#login" data-target="#modal_login" data-toggle="modal">Login</span>
+      <span class="nav-item nav-link" href="" data-target="#modal_login" data-toggle="modal">Login</span>
       <a class="nav-item nav-link" href="lodge.html">Lodge Complaint</a>
       <a class="nav-item nav-link" href="view.html">View Complaint</a>
       <a class="nav-item nav-link active" href="status.html">Complaint Status</a>
@@ -112,7 +112,7 @@
   <div class="modal-content">
 
     <div class="modal-header">
-      <span style="font-size:0.975em !important;"><b>Note: </b>Strictly for Departmental Use <font color="red">*</font></span>
+      <span style="font-size:0.975em !important;"><b>Note: </b> Strictly for Departmental Use <font color="red">*</font></span>
 
       <button type="button" class="close float-right" name="button" data-dismiss="modal"> &times; </button>
   </div>
@@ -184,6 +184,7 @@
 
 
 <div class="container border" style="padding:3% 10%  !important;">
+<form class="" action="index.html" method="post">
 
 <table class="table table-border" >
 
@@ -228,7 +229,7 @@
   </div>
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 
-    <td colspan=""><input type="text" name="FirstComplainantName" id="FirstComplainantName" style="width:100% !important; padding:6px;  border:1px solid #281859;" maxlength="50" value="" class="" onchange="" onblur=""></td>
+    <td colspan=""><input type="text" placeholder=" Enter Name" name="FirstComplainantName" id="FirstComplainantName" style="width:100% !important; padding:6px;  border:1px solid #281859;" maxlength="50" value="" class="" onchange="" onblur=""></td>
   </div>
   </tr>
 </div>
@@ -243,7 +244,7 @@
       </label>
       </td>
 
-      <td colspan=""><input type="text" name="MiddleComplainantName" id="MiddleComplainantName" style="width:100% !important; padding:6px;  border:1px solid #281859;" maxlength="50" value="" class="" onchange="" onblur=""></td>
+      <td colspan=""><input type="text" placeholder=" Enter Middle Name" name="MiddleComplainantName" id="MiddleComplainantName" style="width:100% !important; padding:6px;  border:1px solid #281859;" maxlength="50" value="" class="" onchange="" onblur=""></td>
       </tr>
   <!--  ********************************* row 3  ********************************************-->
 
@@ -254,7 +255,7 @@
       </label>
       </td>
 
-      <td colspan=""><input type="text" name="LastComplainantName" id="LastComplainantName" style="width:100% !important; padding:6px;  border:1px solid #281859;" maxlength="50" value="" class="" onchange="" onblur=""></td>
+      <td colspan=""><input type="text" placeholder=" Enter Surname" name="LastComplainantName" id="LastComplainantName" style="width:100% !important; padding:6px;  border:1px solid #281859;" maxlength="50" value="" class="" onchange="" onblur=""></td>
 
   </tr>
 
@@ -267,7 +268,7 @@
       </label>
       </td>
 
-      <td colspan=""><input type="email" name="email" id="LastComplainantName" style="width:100% !important; padding:6px;  border:1px solid #281859;" maxlength="50" value="" class="" onchange="" onblur=""></td>
+      <td colspan=""><input placeholder=" Enter Email ID" type="email" name="email" id="LastComplainantName" style="width:100% !important; padding:6px;  border:1px solid #281859;" maxlength="50" value="" class="" onchange="" onblur=""></td>
 
 
 
@@ -281,7 +282,7 @@
     </label>
     </td>
 
-    <td colspan=""><input type="text" name="" id="LastComplainantName" style="width:100% !important; padding:6px;  border:1px solid #281859;" maxlength="10" value="" class="" onchange="" onblur=""></td>
+    <td colspan=""><input type="text" name="" placeholder=" Enter Phone Number" id="LastComplainantName" style="width:100% !important; padding:6px;  border:1px solid #281859;" maxlength="10" value="" class="" onchange="" onblur=""></td>
 
 </tr>
 
@@ -293,7 +294,7 @@
     </label>
     </td>
 
-    <td colspan=""><input type="text" name="" id="LastComplainantName" style="width:100% !important; padding:6px;  border:1px solid #281859;" maxlength="10" value="" class="" onchange="" onblur=""></td>
+    <td colspan=""><input type="text" placeholder=" Enter Complaint ID" name="" id="LastComplainantName" style="width:100% !important; padding:6px;  border:1px solid #281859;" maxlength="10" value="" class="" onchange="" onblur=""></td>
 
 </tr>
 
@@ -303,14 +304,15 @@
 <tr>
 <td colspan="4" align="center">
 <button type="submit" name="button">Show Status</button>
-<button  type="reset" name="button">Reset</button></td>
+<button type="reset" value="Reset" name="button">Reset</button>
+</td>
 </tr>
 
 
       </tbody>
 
 </table>
-
+</form>
 
 </div>
 
