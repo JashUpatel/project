@@ -237,6 +237,22 @@ header h1{
       //border-width: medium;
     }
 
+    #navbarNav span:hover{
+      text-shadow: 1px 1.75px 2.5px #eded67de !important;
+      margin: 5px 20px 5px 20px !important;
+      padding: 0px 10px 5px 10px !important;
+      vertical-align: middle !important;
+      background-color: #281859 !important;
+      color: #F7F8F3 !important;
+      font-size: 1.25em;
+      font-weight: 600 !important;
+
+    }
+
+
+
+
+
     /*-------- form section---------------*/
 table label{
   font-weight: 600;
