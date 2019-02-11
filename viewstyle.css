@@ -254,6 +254,34 @@ header h1{
 
 
     /*-------- form section---------------*/
+
+
+    .table {
+      table-layout: fixed; width: 100%;
+     }
+
+     .table col.one
+      {
+        width: 28%;
+       }
+
+       .table col.two
+        {
+          width: 28%;
+         }
+
+         .table col.three
+          {
+            width: 15%;
+           }
+           .table col.four
+            {
+
+             }
+
+
+
+
 table label{
   font-weight: 600;
   color: #281859;
@@ -273,7 +301,7 @@ table button{
 }
 
 table input{
-  width: 150% !important;
+   width: 100% !important;
 }
 /*-------- hover button---------------*/
 
@@ -384,10 +412,22 @@ table button:hover{
     }
 }
 
+#wid{
+
+width: 25%;
+
+}
+
 
 /*-------- responsive table--------------*/
 
 @media (max-width: 770px) {
+
+  .table{
+    width: 100%;
+    table-layout: auto;
+  }
+
 
 td{
   display:block;
@@ -396,7 +436,12 @@ td{
 table input{
   width: 90% !important;
 }
-
+table textarea{
+  width: 90% !important;
+}
+#wid {
+  width: :90% !important;
+}
 }
 
 
