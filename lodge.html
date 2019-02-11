@@ -10,6 +10,8 @@
 <!-- ************** Jquery active link styling *******************  -->
 
     <style media="screen">
+
+
       .active{
 
         border-bottom: 1.5px solid white;
@@ -38,7 +40,7 @@
 
 <!-- ****************** file linking *************************************-->
     <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="viewstyle.css">
+    <link rel="stylesheet" href="lodgestyle.css">
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
@@ -181,11 +183,19 @@
 
   <table class="table">
 
+    <colgroup>
+    		<col class="one"/>
+    		<col class="two"/>
+    		<col class="three"/>
+    		<col class="four"/>
+    	</colgroup>
+
     <thead>
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
-        <tr align="left" class="titles h4" height="30"><th colspan="4" style="color: #281859;">Register your Complain</th>
+        <tr align="left" class="titles h5" height="30">
+          <th colspan="4" style="color: #281859;">Register your Complain</th>
         </tr>
         </div>
     </div>
@@ -196,13 +206,18 @@
 
         <tr>
 
-         <td colspan="4" align="left" style="color: #281859; padding:2% 1.3%;font-size: 1.25em;font-weight: normal;">
-         <b>Note:</b> Parameters marked with a <font color="red">*</font> are mandatory
+         <td colspan="4" align="left" style="color: #281859;padding:2% 1.3%;font-size: 1.25em;font-weight: normal;">
+        <font style="margin-bottom:2%;" color="red">Please fill in the form below to register a new complain</font><br>
+        <b>Note:</b> Parameters marked with a <font color="red">*</font> are mandatory
+
+       </td>
+
 
         </td>
         </tr>
       </div>
       </div>
+
 
     </thead>
 
@@ -213,7 +228,7 @@
     <tr>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 
-      <td colspan="">
+      <td colspan="1">
         <label for="FirstComplainantName">First Name of Complainant
           <font color="RED">*</font>
 
@@ -222,38 +237,50 @@
     </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 
-      <td colspan=""><input placeholder="  Name" style="width: 100% !important; padding:6px;  border:1px solid #281859;"  type="text" name="FirstComplainantName" id="FirstComplainantName" style="padding:6px;  border:1px solid #281859;" maxlength="50" value="" class="" onchange="" onblur=""></td>
+      <td colspan="1"><input placeholder="  Name" style=""  type="text" name="FirstComplainantName" id="FirstComplainantName" style="padding:6px;  border:1px solid #281859;" maxlength="50" value="" class="" onchange="" onblur=""></td>
     </div>
     </tr>
   </div>
 
 
     <!--  ********************************* row 2 ********************************************-->
-
+    <div class="row">
     <tr>
-      <td colspan="">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+
+      <td colspan="1">
         <label for="MiddleComplainantName">Middle Name of Complainant
           <font color="RED">*</font>
 
         </label>
         </td>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 
-        <td colspan=""><input placeholder="  Middle name"style="width: 100% !important; padding:6px;  border:1px solid #281859;" type="text" name="MiddleComplainantName" id="MiddleComplainantName" style="padding:6px;  border:1px solid #281859;" maxlength="50" value="" class="" onchange="" onblur=""></td>
-
-    </tr>
+        <td colspan="1"><input placeholder="  Middle name"style="" type="text" name="MiddleComplainantName" id="MiddleComplainantName" style="padding:6px;  border:1px solid #281859;" maxlength="50" value="" class="" onchange="" onblur=""></td>
+      </div>
+      </tr>
+    </div>
     <!--  ********************************* row 3  ********************************************-->
 
+    <div class="row">
     <tr>
-      <td colspan="">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+
+      <td colspan="1">
         <label for="LastComplainantName">Last Name of Complainant
           <font color="RED">*</font>
 
         </label>
         </td>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 
-        <td colspan=""><input placeholder="  Surname"style="width: 100% !important; padding:6px;  border:1px solid #281859;" type="text" name="LastComplainantName" id="LastComplainantName" style="padding:6px;  border:1px solid #281859;" maxlength="50" value="" class="" onchange="" onblur=""></td>
+        <td colspan="1"><input placeholder="  Surname"style="" type="text" name="LastComplainantName" id="LastComplainantName" style="padding:6px;  border:1px solid #281859;" maxlength="50" value="" class="" onchange="" onblur=""></td>
 
-    </tr>
+      </div>
+      </tr>
+    </div>
 
     <!--  ********************************* new row 4  col 1 gender name********************************************-->
 
@@ -293,7 +320,7 @@
       <!--  ********************************* row 4 col 4 input gender********************************************-->
 
       <td colspan="1">
-<input type="number" min="18" Max="99" name="age" style="width: 50% !important; padding:6px;  border:1px solid #281859;" value="">
+<input type="number" placeholder=" Age" min="18" Max="99" name="age" style="width: 50% !important;" value="">
     </td>
 
     </div>
@@ -323,7 +350,7 @@
 
       <td colspan="1">
 
-        <textarea name="address" rows="4" cols="" placeholder="Residential Address" style="width:100% !important; padding:6px;  border:1px solid #281859;"></textarea>
+        <textarea name="address" rows="4" cols="" placeholder="Residential Address" style=""></textarea>
       </td>
   </address>
 
@@ -340,7 +367,7 @@
       <!--  ********************************* row 5 col 4 input pin********************************************-->
 
       <td colspan="1">
-<input type="text" style="width: 100% !important; padding:6px;  border:1px solid #281859;" name="pin" value="" placeholder="City Pin Code">
+<input type="text" style="" name="pin" value="" placeholder="City Pin Code">
     </td>
 
     </div>
@@ -364,7 +391,7 @@
       <!--  ********************************* row 6 col 4 input pin********************************************-->
 
       <td colspan="1">
-<input type="email" style="width:100% !important; padding:6px !important;  border:1px solid #281859 !important;" name="email" value="" placeholder="Email Address">
+<input type="email" style="" name="email" value="" placeholder="Email Address">
     </td>
 
     </div>
@@ -381,7 +408,7 @@
 
       <td colspan="1">
 
-        <input type="text" name="phone" value="" maxlength="10" style="width:100% !important; padding:6px !important;  border:1px solid #281859;" placeholder="Phone Number">
+        <input type="text" name="phone" value="" maxlength="10" style="" placeholder="Phone Number">
       </td>
 
     </div>
@@ -408,7 +435,7 @@
       <!--  ********************************* row 7 col 2 input gender********************************************-->
 
       <td colspan="1">
-        <select  style="width: 75% !important; padding:6px;  border:1px solid #281859;" size="1" name="identity" type="select-one">
+        <select  style="" size="1" name="identity" type="select-one">
 
         <option value="-1">- Select -</option>
         <option value="0">Passport</option>
@@ -435,7 +462,7 @@
       <!--  ********************************* row 7 col 4 input pin********************************************-->
 
       <td colspan="1">
-<input type="text" style="width:100% !important;padding:6px;  border:1px solid #281859;" name="id" value="" placeholder="Identity Number">
+<input type="text" style="" name="id" value="" placeholder="Identity Number">
     </td>
 
     </div>
@@ -450,7 +477,7 @@
 <tr>
   <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 
-  <td colspan="">
+  <td colspan="1">
     <label for="proofattch">Identity Proof Attachment
       <font color="RED">*</font>
 <small><br>Files must be less than 3 MB.<br>
@@ -461,20 +488,20 @@ Allowed file types: .pdf, .jpg.
 </div>
   <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 
-  <td colspan="">
-    <input type="file" name="proofattch" id="FirstComplainantName" style="width:75% !important;padding:6px;  border:1px solid #281859;" value="" class="" onchange="" onblur=""></td>
+  <td colspan="1">
+    <input type="file" name="proofattch" id="FirstComplainantName" style="" value="" class="" onchange="" onblur=""></td>
 </div>
 </tr>
 </div>
 
 
 
-<div class="row">
+<div id="" class="row">
 
-      <tr>
+      <tr >
 
         <!--  ********************************* row 8 col 1  District name********************************************-->
-<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+<div id="" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 
 
        <td colspan="1">
@@ -510,7 +537,7 @@ Allowed file types: .pdf, .jpg.
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-          <select  id="dist_id" style="width: 75%; padding:7.5px;  border:1px solid #281859;" type="select-one">
+          <select  id="dist_id" style="" type="select-one">
 
           <option value="-1">- Select -</option>
         <option  value="ahmdc">Ahmedabad City</option>
@@ -565,14 +592,10 @@ Allowed file types: .pdf, .jpg.
 
 
 
-
-
-
-
   <!--  ********************************* row 8 col 4 input police station name********************************************-->
 
-  <td id="wid" colspan="1">
-      <select id="stn_id" style="width: 75% !important; padding:7.5px !important;  border:1px solid #281859;" size="1" name="PoStationName" type="select-one">
+  <td colspan="1">
+      <select id="stn_id" style="" size="1" name="PoStationName" type="select-one">
 
   <option value="-1">- Select -</option></select>
   </td>
@@ -587,14 +610,14 @@ Allowed file types: .pdf, .jpg.
 <tr>
 
     <!--  ********************************* row 9 col 1 ********************************************-->
-    <td class=""><label for="place">Place of Occurence
+    <td colspan="1" class=""><label for="place">Place of Occurence
 
       </label>
       </td>
       <!--  ********************************* row 9 col 2 ********************************************-->
 
 
-    <td><input type="text" name="place"  style="width: 75% !important; padding:6px;  border:1px solid #281859;" maxlength="20" value="" class="" onchange="" onblur="" placeholder="Area of Incidence"></td>
+    <td colspan="1"><input type="text" name="place"  style="" maxlength="20" value="" class="" onchange="" onblur="" placeholder="Area of Incidence"></td>
 
     </tr>
 
@@ -603,7 +626,7 @@ Allowed file types: .pdf, .jpg.
     <tr>
 
         <!--  ********************************* row 10 col 1 ********************************************-->
-        <td class=""><label for="place">Subject of Complaint
+        <td colspan="1" class=""><label for="place">Subject of Complaint
           <font color="RED">*</font>
 
           </label>
@@ -611,8 +634,8 @@ Allowed file types: .pdf, .jpg.
           <!--  ********************************* row 10 col 2 ********************************************-->
 
 
-        <td>
-          <input type="text" name="subject" style="width: 100% !important; padding:6px !important;  border:1px solid #281859;" maxlength="150" value="" class="" onchange="" onblur="" placeholder="Enter the type/matter of Complaint"></td>
+        <td colspan="1">
+          <input type="text" name="subject" style="" maxlength="150" value="" class="" onchange="" onblur="" placeholder="Enter the type/matter of Complaint"></td>
 
         </tr>
 
@@ -620,7 +643,7 @@ Allowed file types: .pdf, .jpg.
       <tr>
 
           <!--  ********************************* row 11 col 1 ********************************************-->
-          <td class=""><label for="place">Complaint Detail
+          <td colspan="1" class=""><label for="place">Complaint Detail
             <font color="RED">*</font>
 
             </label>
@@ -628,8 +651,8 @@ Allowed file types: .pdf, .jpg.
             <!--  ********************************* row 11 col 2 ********************************************-->
 
 
-          <td>
-            <textarea class="form-control" rows="6" cols="" style="width: 100% !important; padding:6px !important;  border:1px solid #281859;" placeholder="Enter the Details of Complaint."></textarea>
+          <td colspan="1">
+            <textarea class="form-control" rows="6" cols="" style="width:175%; padding:6px;border:1px solid #281859;" placeholder="Enter the Details of Complaint."></textarea>
 
     </tr>
 
@@ -637,7 +660,7 @@ Allowed file types: .pdf, .jpg.
     <tr>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 
-      <td colspan="">
+      <td colspan="1">
         <label for="proofattch">Proof/Attachment <br> regarding the case
     <small><br>Files must be less than 3 MB.<br>
     Allowed file types: .pdf, .jpg.
@@ -647,8 +670,8 @@ Allowed file types: .pdf, .jpg.
     </div>
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 
-      <td colspan="">
-        <input type="file" name="proofattch" id="FirstComplainantName" style="width: 75% !important; padding:6px;  border:1px solid #281859;" value="" class="" onchange="" onblur=""></td>
+      <td colspan="1">
+        <input type="file" name="proofattch" id="FirstComplainantName" style="" value="" class="" onchange="" onblur=""></td>
     </div>
     </tr>
     </div>
@@ -659,8 +682,8 @@ Allowed file types: .pdf, .jpg.
       <label for="otp">OTP
         <font color="RED">*</font>
         </label>
-      <input style="width:25% !important;height:50px !important;"type="text" name="otp" value="" placeholder="Unique Code">
-      <button  style="height:50px !important;"type="reset" value="submit" name="button">Submit OTP</button>
+      <input style="width: 25% !important;" type="text" name="otp" value="" placeholder="Unique Code">
+      <button  style="height:50px !important;"type="submit" value="submit" name="button">Verify OTP</button>
     </td>
     </tr>
 
@@ -672,6 +695,20 @@ Allowed file types: .pdf, .jpg.
   <button type="submit" name="button">Submit Report</button>
   <button type="reset" value="Reset" name="button">Reset</button></td>
 </tr>
+
+
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+<tr>
+
+  <td colspan="4" align="left" style="color: #281859;padding:2% 1.3%;font-size: 0.8em;font-weight: normal;">
+ <b> Disclaimer: </b><font color="red">Gujarat Police The Online facility of filing complaints on FIR system is for the convenience of citizens completely.<br> All efforts will be made to take quick action on the lodged complaints. Gujarat Police will not be liable in any way for any legal and other action on the basis of this facility.<br> The use of this system is prohibited as an RTI.<br> <b> Warning: </b> On giving false and misleading information to Gujarat police action can be taken under Section 182 and 211.</font>
+</td>
+</tr>
+</div>
+</div>
+
 
 
         </tbody>
