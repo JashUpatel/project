@@ -35,6 +35,32 @@
     });
 
     </script>
+    
+    
+    
+    <script type="text/javascript">
+      function yscroll(){
+        var image = document.getElementById('image');
+        var headr = document.getElementById('topheader');
+        var hd = document.querySelector("h1");
+        var h = document.getElementById('h');
+        var g =document.getElementById('g');
+        ypos=window.pageYOffset;
+        if (ypos>100) {
+          image.style.display="none";
+          headr.style.height="85px";
+           h.id='g';
+        } else if(ypos<=100) {
+          image.style.display="block";
+          headr.style.height='auto';
+          g.id='h';
+
+        }
+
+      }
+      window.addEventListener("scroll",yscroll);
+
+    </script>
 
 <!-- ****************** file linking *************************************-->
     <link rel="stylesheet" href="bootstrap.css">
